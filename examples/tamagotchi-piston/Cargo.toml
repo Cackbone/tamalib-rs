@@ -1,0 +1,11 @@
+[package]
+name = "tamagotchi-piston"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+piston_window = "0.132.0"
+tamalib-rs = { path = "../.." }
+rodio = "0.20.1" 
+futures = "0.3.31"
+clap = { version = "4.5.38", features = ["derive"] }
