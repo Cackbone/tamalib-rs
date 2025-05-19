@@ -122,23 +122,10 @@ impl Tamagotchi {
         self.step();
         let now = self.cpu.clock.system_clock.now();
         let elapsed = now - self.screen_ts;
-
+        
         if elapsed as u128 >= (self.ts_freq / self.framerate) as u128 {
             self.screen_ts = now;
             self.io.screen.borrow_mut().update();
-        }
-    }
-
-    pub async fn run_async(&mut self) {
-        self.exec_mode = ExecMode::Run;
-        loop {
-            self.step();
-            let now = self.cpu.clock.system_clock.now();
-            let elapsed = now - self.screen_ts;
-            if elapsed as u128 >= (self.ts_freq / self.framerate) as u128 {
-                self.screen_ts = now;
-                self.io.screen.borrow_mut().update();
-            }
         }
     }
 

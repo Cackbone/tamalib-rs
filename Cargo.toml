@@ -4,10 +4,6 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-dynfmt = { version="0.1.5", features = ["curly"] }
-gloo-timers = { version="0.3.0", features = ["futures"] }
 inventory = "0.3.20"
-num-traits = "0.2.19"
 regex = "1.11.1"
 tamalib_macros = { path = "./tamalib_macros" }
-wasm-bindgen-futures = "0.4.50"
