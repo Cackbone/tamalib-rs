@@ -1,7 +1,13 @@
 [package]
-name = "tamalib-rs"
+name = "tamalib"
 version = "0.1.0"
 edition = "2024"
+description = "A simple and headless Tamagotchi P1 emulator"
+repository = "https://github.com/Cackbone/tamalib-rs"
+documentation = "https://github.com/Cackbone/tamalib-rs"
+license-file = "LICENSE"
+keywords = ["emulator", "tamagotchi", "game"]
+
 
 [dependencies]
 inventory = "0.3.20"
