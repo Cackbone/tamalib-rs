@@ -6,4 +6,4 @@ edition = "2024"
 [dependencies]
 inventory = "0.3.20"
 regex = "1.11.1"
-tamalib_macros = { path = "./tamalib_macros" }
+# tamalib_macros = { path = "./tamalib_macros" }
